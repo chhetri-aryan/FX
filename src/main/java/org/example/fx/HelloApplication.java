@@ -20,7 +20,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
 
         Label heading = new Label("Registration Form");
-        heading.setFont(new Font("Arial", 20)); // Set
+        heading.setFont(new Font("Arial", 20));
 
         Label name=new Label("Name: ");
         Label email = new Label("Email: ");
