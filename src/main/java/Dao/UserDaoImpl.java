@@ -7,6 +7,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDaoImpl implements UserInfoDao {
     @Override
@@ -33,5 +35,27 @@ public class UserDaoImpl implements UserInfoDao {
         }
 
         return false;
+    }
+
+    @Override
+    public List<User> showAllUser() {
+        List<User> list = new ArrayList<>();
+
+        try {
+            Connection con  = DbConnection.getConnection();
+            Statement stm = con.createStatement();
+
+            ResultSet rs = stm.executeQuery("Select * from user");
+
+            while (rs.next()) {
+                list.add(new User(rs.getString("name"), rs.getString("email"), rs.getString("department"), rs.getString("phone")));
+            }
+
+            con.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return list;
     }
 }
