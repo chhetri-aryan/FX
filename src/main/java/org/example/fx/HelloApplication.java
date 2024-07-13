@@ -38,8 +38,6 @@ public class HelloApplication extends Application {
 
         Button b = new Button("Submit");
 
-
-
         GridPane root = new GridPane();
 
         HBox h1 = new HBox(name, tf1);
@@ -89,6 +87,7 @@ public class HelloApplication extends Application {
         Scene scene=new Scene(root,500,400);
 
         stage.setScene(scene);
+        stage.setTitle("Registration Form");
         stage.show();
     }
 

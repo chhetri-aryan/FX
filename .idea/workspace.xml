@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18c84f22-17f7-4dc2-b8dd-dfa9176efdb1" name="Changes" comment="pretty much done with ti">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="18c84f22-17f7-4dc2-b8dd-dfa9176efdb1" name="Changes" comment="fixed the sql query">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fx/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/UserDaoImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,12 +120,45 @@
       <option name="project" value="LOCAL" />
       <updated>1720850295461</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed the sql query">
+      <option name="closed" value="true" />
+      <created>1720851765252</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720851765252</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed the sql query">
+      <option name="closed" value="true" />
+      <created>1720851798106</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720851798106</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixed the sql query">
+      <option name="closed" value="true" />
+      <created>1720851804330</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720851804330</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed the sql query">
+      <option name="closed" value="true" />
+      <created>1720851812755</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720851812755</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Done with Fx, now working on Dao and database" />
     <MESSAGE value="pretty much done with ti" />
-    <option name="LAST_COMMIT_MESSAGE" value="pretty much done with ti" />
+    <MESSAGE value="fixed the sql query" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the sql query" />
   </component>
 </project>

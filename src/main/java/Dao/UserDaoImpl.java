@@ -15,7 +15,6 @@ public class UserDaoImpl implements UserInfoDao {
             Connection con  = DbConnection.getConnection();
             Statement stm = con.createStatement();
 
-            System.out.println(user);
 
 //            ResultSet rs = stm.executeQuery("Select * from product");
             String sql = "INSERT INTO user (name, email, department, phone) VALUES" +
