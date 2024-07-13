@@ -15,10 +15,13 @@ public class UserDaoImpl implements UserInfoDao {
             Connection con  = DbConnection.getConnection();
             Statement stm = con.createStatement();
 
-//            ResultSet rs = stm.executeQuery("Select * from product");
-            String sql = "INSERT INTO product (name, price, category) VALUES" +
-                    " (" + user.getName() + "," + user.getEmail() + "," + user.getDepartment() + "," + user.getPhone() +");";
+            System.out.println(user);
 
+//            ResultSet rs = stm.executeQuery("Select * from product");
+            String sql = "INSERT INTO user (name, email, department, phone) VALUES" +
+                    " (" + user.getName() + ",'" + user.getEmail() + "','" + user.getDepartment() + "','" + user.getPhone() +"');";
+
+            System.out.println(sql);
             stm.execute(sql);
 
 

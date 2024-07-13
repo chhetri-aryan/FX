@@ -1,5 +1,7 @@
 package org.example.fx;
 
+import Dao.UserDaoImpl;
+import User.User;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -60,9 +62,9 @@ public class HelloApplication extends Application {
             String nameValue = tf1.getText();
             String emailValue = tf2.getText();
             String departmentValue = departmentComboBox.getValue();
-            String phoneNumber = tf3.getText();
+            String phoneValue = tf3.getText();
 
-            if (nameValue.isEmpty() || emailValue.isEmpty() || departmentValue.isEmpty() || phoneNumber.isEmpty()) {
+            if (nameValue.isEmpty() || emailValue.isEmpty() || departmentValue.isEmpty() || phoneValue.isEmpty()) {
                 Alert alert = new Alert(Alert.AlertType.WARNING);
                 alert.setTitle("Alert");
                 alert.setHeaderText(null);
@@ -75,13 +77,15 @@ public class HelloApplication extends Application {
                 alert.setContentText("Form Successfully submitted");
                 alert.showAndWait();
 
+                UserDaoImpl dI = new UserDaoImpl();
+                dI.addUser(new User(nameValue, emailValue, departmentValue, phoneValue));
 
             }
 
             System.out.println("Name: " + nameValue);
             System.out.println("Email: " + emailValue);
             System.out.println("Department: " + departmentValue);
-            System.out.println("Phone number: " + numberComboBox.getValue() + " " + phoneNumber);
+            System.out.println("Phone number: " + numberComboBox.getValue() + " " + phoneValue);
 
         });
 
