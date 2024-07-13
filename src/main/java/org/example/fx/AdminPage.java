@@ -3,10 +3,7 @@ package org.example.fx;
 import Dao.UserDaoImpl;
 import User.User;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
@@ -29,7 +26,7 @@ public class AdminPage  {
         Label pwd = new Label("Password: ");
 
         TextField tf1=new TextField();
-        TextField tf2=new TextField();
+        PasswordField tf2=new PasswordField();
 
         Button login = new Button("Login");
 
@@ -55,13 +52,22 @@ public class AdminPage  {
             UserDaoImpl dI = new UserDaoImpl();
             if (tf1.getText().equals("admin") && tf2.getText().equals("admin")) {
                 HBox hBox = new HBox();
+
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Alert");
+                alert.setHeaderText(null);
+                alert.setContentText("Login Successful, now you can view the data");
+                alert.showAndWait();
+                tf1.setText("");
+                tf2.setText("");
+
                 StringBuilder sb = new StringBuilder("Data\n");
                 for (User u : dI.showAllUser()) {
                     sb.append(u).append("\n");
                 }
                 Label l = new Label(sb.toString());
                 l.setWrapText(true);
-                l.setMaxWidth(300);
+                l.setMaxWidth(400);
                 hBox.getChildren().add(l);
                 root.addRow(6, hBox );
             } else {

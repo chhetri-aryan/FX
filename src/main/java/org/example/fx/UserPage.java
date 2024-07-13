@@ -88,7 +88,7 @@ public class UserPage {
                 alert.showAndWait();
 
                 UserDaoImpl dI = new UserDaoImpl();
-                dI.addUser(new User(nameValue, emailValue, departmentValue, phoneValue));
+                dI.addUser(new User(nameValue, emailValue, departmentValue, (numberComboBox.getValue() + " " + phoneValue)));
 
             }
 
