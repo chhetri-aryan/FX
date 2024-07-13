@@ -3,6 +3,7 @@ package org.example.fx;
 import Dao.UserDaoImpl;
 import User.User;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -63,6 +64,12 @@ public class AdminPage  {
                 l.setMaxWidth(300);
                 hBox.getChildren().add(l);
                 root.addRow(6, hBox );
+            } else {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Alert");
+                alert.setHeaderText(null);
+                alert.setContentText("Please enter valid Credentials");
+                alert.showAndWait();
             }
 
         });

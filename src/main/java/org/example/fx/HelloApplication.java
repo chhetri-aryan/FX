@@ -25,7 +25,6 @@ public class HelloApplication extends Application {
         stage.setTitle("Registration Form");
         stage.show();
 
-
     }
 
     public static void main(String[] args) {
