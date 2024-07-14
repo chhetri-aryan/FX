@@ -5,3 +5,6 @@ This project is built using JavaFX to create a comprehensive system where users 
 
 # Main Page: User
 ![image](https://github.com/user-attachments/assets/11b19441-8d2e-498c-8d85-2a6d4533aafa)
+
+# Video Demo
+https://github.com/user-attachments/assets/7e6f7cd6-3c92-4780-8a81-87b8b4952754
